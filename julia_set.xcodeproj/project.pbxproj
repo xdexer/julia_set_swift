@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7E0A30AC2BC1CE7900077BC8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A30AB2BC1CE7900077BC8 /* main.swift */; };
+		7E17334F2BD1802F00A87C52 /* julia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E17334E2BD1802F00A87C52 /* julia.swift */; };
+		7E1733512BD1B28D00A87C52 /* create_png.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1733502BD1B28D00A87C52 /* create_png.swift */; };
+		7E4470CD2BF2AB3600685A46 /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4470CC2BF2AB3600685A46 /* settings.swift */; };
+		7E910F8B2BE81F0C00FC02CF /* julia_metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7E910F8A2BE81F0C00FC02CF /* julia_metal.metal */; };
+		7EB0513C2BEE733900273261 /* metal_thread_group_utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0513B2BEE733900273261 /* metal_thread_group_utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		7E0A30A82BC1CE7900077BC8 /* julia_set */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = julia_set; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0A30AB2BC1CE7900077BC8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7E17334E2BD1802F00A87C52 /* julia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = julia.swift; sourceTree = "<group>"; };
+		7E1733502BD1B28D00A87C52 /* create_png.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = create_png.swift; sourceTree = "<group>"; };
+		7E4470CC2BF2AB3600685A46 /* settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
+		7E910F8A2BE81F0C00FC02CF /* julia_metal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = julia_metal.metal; sourceTree = "<group>"; };
+		7EB0513B2BEE733900273261 /* metal_thread_group_utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_thread_group_utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				7E0A30AB2BC1CE7900077BC8 /* main.swift */,
+				7E17334E2BD1802F00A87C52 /* julia.swift */,
+				7E1733502BD1B28D00A87C52 /* create_png.swift */,
+				7E910F8A2BE81F0C00FC02CF /* julia_metal.metal */,
+				7EB0513B2BEE733900273261 /* metal_thread_group_utils.swift */,
+				7E4470CC2BF2AB3600685A46 /* settings.swift */,
 			);
 			path = julia_set;
 			sourceTree = "<group>";
@@ -121,6 +136,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0A30AC2BC1CE7900077BC8 /* main.swift in Sources */,
+				7EB0513C2BEE733900273261 /* metal_thread_group_utils.swift in Sources */,
+				7E4470CD2BF2AB3600685A46 /* settings.swift in Sources */,
+				7E910F8B2BE81F0C00FC02CF /* julia_metal.metal in Sources */,
+				7E1733512BD1B28D00A87C52 /* create_png.swift in Sources */,
+				7E17334F2BD1802F00A87C52 /* julia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +203,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -240,6 +260,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
